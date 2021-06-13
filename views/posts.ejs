@@ -1,0 +1,19 @@
+<%- include("partials/header") -%>
+
+<header>
+  <h1>This is your Horscope for <%= day %></h1>
+  </header>
+  <form class="" action="/posts" method="post">
+      <h1>Hello <%= name %></h1>
+      <h3>Your Zodiac sign is <strong><%= sign %></strong></h3>
+      <p><%= desc %></p><br />
+      <p>
+        Lucky Number: <%= luckyNo %><br />
+        Lucky Color: <%= color %><br />
+        Mood: <%= mood %><br />
+        Compatibility: <%= compatibility %><br />
+        </p>
+        <img class="image" src=<%= src %> alt="..."><br />
+  </form>
+
+  <%- include("partials/footer") -%>
