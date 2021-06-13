@@ -35,7 +35,7 @@ app.post("/", function(req, res) {
   var newDate = oldDate.split("-").reverse().join("/");
   D_main = newDate.split("/");
   const year = D_main[2]
-  console.log(year);
+  // console.log(year);
 
   //////////////////// Dates ///////////////////////////////
   var Date_to_check = newDate;
@@ -180,7 +180,7 @@ app.post("/", function(req, res) {
     function callback(error, response, object) {
       if (!error && response.statusCode == 200) {
         var newObject = JSON.parse(object)
-        console.log(newObject);
+        // console.log(newObject);
       }
       res.render("posts", {
         day: newDay,
