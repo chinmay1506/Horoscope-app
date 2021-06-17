@@ -3,14 +3,19 @@
 <header>
   <h1>What's Your Raashi?</h1>
 </header>
-<form class="form" action="/" method="post">
-  <input type="text" name="nameOfPerson" value="" name="nameOfPerson" placeholder="Enter your name" autocomplete="off">
-  <input type="date" name="dateOfBirth" value="">
-  <select name="day" id="cars" placholder="Select Day">
-    <option value="Today">Today</option>
-    <option calue="Tomorrow">Tomorrow</option>
-  </select>
-  <button class="btn btn-warning" type="submit">submit</button>
-</form>
+<div>
+  <form class="form" action="/" method="post">
+    <label for="nameOfPerson">Enter your name:</label>
+    <input type="text" name="nameOfPerson" value="" name="nameOfPerson" placeholder="Name" autocomplete="off">
+    <label for="dateOfBirth">What is you date of birth?</label>
+    <input type="date" name="dateOfBirth" value="">
+    <label for="">Select day:</label>
+    <select name="day" id="cars" placeholder="Select Day">
+      <option value="Today">Today</option>
+      <option calue="Tomorrow">Tomorrow</option>
+    </select>
+    <button class="btn btn-warning" type="submit">submit</button>
+  </form>
+</div>
 
 <%- include("partials/footer") -%>

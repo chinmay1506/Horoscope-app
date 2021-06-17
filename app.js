@@ -35,7 +35,7 @@ app.post("/", function(req, res) {
   var newDate = oldDate.split("-").reverse().join("/");
   D_main = newDate.split("/");
   const year = D_main[2]
-  // console.log(year);
+  console.log(year);
 
   //////////////////// Dates ///////////////////////////////
   var Date_to_check = newDate;

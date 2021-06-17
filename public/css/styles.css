@@ -72,16 +72,26 @@ footer p {
 form {
   position: relative;
   width: 480px;
-  margin: 30px auto 20px auto;
+  margin: 70px auto 20px auto;
   background: #faf1e6;
   padding: 15px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   border-radius: 7px;
   box-shadow: 0 1px 5px rgb(138, 137, 137);
 }
 form input,
+form select{
+  width: 100%;
+  background-color: #fff;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+
 form textarea,
-form select,
 form label {
   width: 100%;
   background-color: #faf1e6;
